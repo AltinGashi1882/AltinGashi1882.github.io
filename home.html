@@ -17,30 +17,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-semibold" href="menu.html">Menu</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            More
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Home</a></li>
+            <li><a class="dropdown-item" href="menu.html">Menu</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">About Us</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <a class="nav-link">Contact Us</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <button class="btn btn-warning" type="submit">Sign Up</button>
-      </form>
+      
+        <a href="sign_up.html"><button class="btn btn-warning" type="submit">Sign Up</button></a>
+      
     </div>
   </div>
 </nav>
@@ -52,7 +46,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active c-item" data-bs-interval="10000">
-      <img src="images/5qebapa.jfif" class="d-block w-100 c-img" alt="...">
+      <img src="images/qebapa_ne_pitajl.jpg" class="d-block w-100 c-img" alt="...">
       <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
       <div class="carousel-caption d-none d-md-block">
         <h2 class="text-light">Qebapa të shijshëm tradicionale</h5>
@@ -60,7 +54,7 @@
       </div>
     </div>
     <div class="carousel-item c-item" data-bs-interval="2000">
-      <img src="images/qebapa_ne_pitajl.jpg" class="d-block w-100 c-img" alt="...">
+      <img src="images/5qebapa.jfif" class="d-block w-100 c-img" alt="...">
       <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
       <div class="carousel-caption d-none d-md-block">
         <h2 class="text-light">Qebapa me salcë pikante</h5>
@@ -87,17 +81,19 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<div class="card text-center">
-  <div class="card-header">
-    Kryesore
-  </div>
-  <div class="card-body">
-    <h5 class="card-title fs-5">Zgjedh nga menuja jonë</h5>
-    <p class="card-text fs-8">Shije të vërteta tradicionale..</p>
-    <a href="menu.html" class="btn btn-warning btn-lg fw-semibold">Shiko Menu</a>
-  </div>
-  <div class="card-footer text-body-secondary">
-    Qebaptore Shqiprimi
+<div class="card">
+  <div class="card-body background-custom-color m-0 p-5 d-flex align-items-center shadow" style="height: 275px;">
+    <div class="row w-100">
+      <div class="col">
+        <h5 class="card-title fs-2 text-center">Zgjedh nga menuja jonë</h5>
+        <p class="card-text fs-4 text-center">Shije të vërteta tradicionale..</p>
+      </div>
+      <div class="col">
+        <div class="text-center">
+          <a href="menu.html" class="shadow-lg btn bg-warning-subtle btn-lg fs-3 ps-3 pe-3 fw-bold">MENU</a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -204,7 +200,7 @@ Me përzgjedhje të kujdesshme të kokrrave dhe përpunim artizanal që nga viti
     <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
         <h2 class="fw-bold mb-3">Porosit tani me një telefonatë!</h2>
       <p class="fs-5 fw-semibold">Për një shërbim të shpejtë dhe të lehtë, na kontaktoni direkt në numrin tonë. Bëni porosinë tuaj pa komplikime dhe ne kujdesemi për gjithçka tjetër. Kafeja apo ushqimi juaj i preferuar, vetëm një telefonatë larg!</p>
-      <button class="btn btn-warning btn-lg fw-semibold mb-3">+383 44 116 364</button>
+      <button class="btn btn-warning btn-lg fw-semibold mb-3 text-decoration-none">+383 44 116 364</button>
     </div>
     <div class="col">
       <img src="images/undraw_talking-on-the-phone_lc9v.png" class="img-fluid rounded-circle shadow-lg bg-dark" style="width: 350px; height: 350px; object-fit: cover;">
@@ -234,5 +230,8 @@ Me përzgjedhje të kujdesshme të kokrrave dhe përpunim artizanal që nga viti
     </div>
   </div>
 </div>
-
+<div id="weather-footer" class="position-fixed bottom-0 end-0 m-2 bg-dark text-white rounded-pill px-1 py-2 d-flex align-items-center shadow">
+    <span class="me-2">Fetching...</span>
+</div>
+<script src="js_2/weather.js"></script>
 </html>
