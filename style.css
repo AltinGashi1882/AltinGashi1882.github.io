@@ -69,7 +69,23 @@ aside {
   linear-gradient(270deg, #fbd07c, #f7f779);
   background-position: left center, 0% 50%;
   animation: gradientMove 3s ease-in-out infinite;
-  background-size: auto, 200% 200%;  /* second gradient larger for movement */
+  background-size: auto, 200% 200%;  
+}
+@keyframes gradientMove {
+  0%, 100% {
+    background-position: left center, 0% 50%;
+  }
+  50% {
+    background-position: left center, 100% 50%;
+  }
+}
+.background-weather-custom-color {
+    background: 
+  linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+  linear-gradient(270deg, #9bf8f4, #6f7bf7);
+  background-position: left center, 0% 50%;
+  animation: gradientMove 3s ease-in-out infinite;
+  background-size: auto, 200% 200%;  
 }
 @keyframes gradientMove {
   0%, 100% {
