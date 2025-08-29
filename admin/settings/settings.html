@@ -49,33 +49,37 @@
 
       <!-- Form Section -->
       <div class="col-lg-9 col-md-8">
-        <h2 class="text-center">Add Item</h2>
+        <h2 class="text-center">Settings</h2>
         <form class="p-3 border rounded bg-light">
           <div class="row g-4">
             <div class="col-md-6">
-              <label for="idInput" class="form-label fw-bold">ID</label>
-              <input type="number" id="idInput" class="form-control" placeholder="Number">
+                <label for="priceInput" class="form-label fw-bold">Logo</label>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                    <input type="file" class="form-control" id="inputGroupFile01">
+                </div>
             </div>
             <div class="col-md-6">
-              <label for="itemName" class="form-label fw-bold">Item Name</label>
-              <input type="text" id="itemName" class="form-control" placeholder="Name">
+              <label for="itemName" class="form-label fw-bold">Business Name</label>
+              <input type="text" id="itemName" class="form-control" placeholder="Qebaptore Shqiprimi">
             </div>
             <div class="col-md-6">
-              <label for="priceInput" class="form-label fw-bold">Price</label>
-              <input type="number" id="priceInput" class="form-control" placeholder="0.50$">
+              <label for="itemName" class="form-label fw-bold">Main Page</label>
+              <input type="text" id="itemName" class="form-control" placeholder="home.html">
+              <label for="itemName" class="form-label fw-bold mt-1">Menu</label>
+              <input type="text" id="itemName" class="form-control" placeholder="menu.html">
             </div>
-            <div class="col-md-6">
-              <label for="categorySelect" class="form-label fw-bold">Category</label>
-              <select id="categorySelect" class="form-select">
-                <option value="Zgara">Zgara</option>
-                <option value="Pije">Pije</option>
-                <option value="Kafe">Kafe</option>
-              </select>
+            <div class="col-md-6 mt-2">
+              <label for="itemName" class="form-label fw-bold">Contact Info</label>
+              <input type="phone" id="itemName" class="form-control mt-1" placeholder="+383 44 116 364">
+              <input type="text" id="itemName" class="form-control mt-1" placeholder="qebaptoreshqiprmi@gmail.com">
+              <input type="text" id="itemName" class="form-control mt-1" placeholder="Instagram">
+              <input type="text" id="itemName" class="form-control mt-1" placeholder="Facebook">
             </div>
           </div>
           <!-- Submit Button -->
           <div class="mt-4 d-flex justify-content-center">
-            <button type="submit" class="btn btn-success px-5">Submit</button>
+            <button type="submit" class="btn btn-success px-4">Update Settings</button>
           </div>
         </form>
       </div>

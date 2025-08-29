@@ -37,8 +37,8 @@
           </div>
           <div class="list-group list-group-flush">
             <a href="managers.html" class="list-group-item list-group-item-warning text-center">Managers</a>
-            <a href="items.html" class="list-group-item list-group-item-warning active text-center">Items</a>
-            <button type="button" class="list-group-item list-group-item-warning text-center">Users</button>
+            <a href="items.html" class="list-group-item list-group-item-warning text-center">Items</a>
+            <button type="button" class="list-group-item list-group-item-warning active text-center">Users</button>
             <button type="button" class="list-group-item list-group-item-warning text-center">A fourth button item</button>
             <button type="button" class="list-group-item list-group-item-danger text-center">Log Out</button>
           </div>
@@ -52,7 +52,7 @@
   <!-- Header with Title + Search -->
   <div class="row align-items-center mb-3">
     <div class="col-md-6">
-      <h2 class="m-0">Items</h2>
+      <h2 class="m-0">Users</h2>
     </div>
     <div class="col-md-6">
       <form class="d-flex justify-content-md-end mt-3 mt-md-0" role="search">
@@ -61,26 +61,35 @@
       </form>
     </div>
   </div>
-          <table class="table table-bordered table-hover table-secondary table-striped-columns text-center">
+
+        <!-- Table -->
+        <table class="table table-bordered table-hover table-secondary table-striped-columns text-center">
+            <thead>
             <tr>
                 <th>ID</th>
-                <th>Name</th>
-                <th>Price</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Location</th>
+                <th>Registered on</th>
                 <th>Option</th>
             </tr>
-            <tr class="text-center py-3 fw-semibold">
+            </thead>
+            <tbody>
+            <tr class="fw-semibold">
                 <td>1</td>
-                <td>Qebapa</td>
-                <td>0.60</td>
-                <td class="d-flex justify-content-center"><button class="btn btn-warning text-center fw-semibold px-3">Edit</button></td>
+                <td>altingashi1882@gmail.com</td>
+                <td>Altin</td>
+                <td>Gashi</td>
+                <td>Prizren</td>
+                <td>8 Feb, 2025</td>
+                <td>
+                <button class="btn btn-warning fw-semibold px-3">Edit</button>
+                </td>
             </tr>
-                <tr class="text-center py-3 fw-semibold">
-                <td>2</td>
-                <td>5 Qebapa</td>
-                <td>3.00</td>
-                <td class="d-flex justify-content-center"><button class="btn btn-warning text-center fw-semibold px-3">Edit</button></td>
-            </tr>
-          </table>
+            </tbody>
+        </table>
+</div>
         </div>
 </div>
 
