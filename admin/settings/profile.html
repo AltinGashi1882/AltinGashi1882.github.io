@@ -18,7 +18,7 @@
       <a class="navbar-brand" href="#">
         <h2>Admin Panel</h2>
       </a>
-      <a href="profile.html"> <button class="btn btn-secondary px-4 fw-bold rounded" type="submit">Profile</button></a>
+     <a href="profile.html"> <button class="btn btn-secondary px-4 fw-bold rounded" type="submit">Profile</button></a>
     </div>
   </nav>
 
@@ -49,40 +49,49 @@
 
       <!-- Form Section -->
       <div class="col-lg-9 col-md-8">
-        <h2 class="text-center">Settings</h2>
+        <h2 class="text-center">Profile Details</h2>
         <form class="p-3 border rounded bg-light">
+            <div class="mt-4 d-flex justify-content-center">
+                        <img src="../../images/profile_picture.png" 
+                 style="width: 150px; height: 150px;" 
+                 class="rounded-circle mb-3" 
+                 alt="Profile Picture">
+          </div>
           <div class="row g-4">
             <div class="col-md-6">
-                <label for="priceInput" class="form-label fw-bold">Logo</label>
-                <div class="input-group mb-3">
-                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
-                    <input type="file" class="form-control" id="inputGroupFile01">
-                </div>
+              <label for="itemName" class="form-label fw-bold">First Name</label>
+              <input type="text" id="itemName" class="form-control" placeholder="Altin">
             </div>
             <div class="col-md-6">
-              <label for="itemName" class="form-label fw-bold">Business Name</label>
-              <input type="text" id="itemName" class="form-control" placeholder="Qebaptore Shqiprimi">
+              <label for="itemName" class="form-label fw-bold">Last Name</label>
+              <input type="text" id="itemName" class="form-control" placeholder="Gashi">
             </div>
             <div class="col-md-6">
-              <label for="itemName" class="form-label fw-bold">Main Page</label>
-              <input type="text" id="itemName" class="form-control" placeholder="home.html">
-              <label for="itemName" class="form-label fw-bold mt-1">Menu</label>
-              <input type="text" id="itemName" class="form-control" placeholder="menu.html">
+              <label for="itemName" class="form-label fw-bold">Location</label>
+              <input type="text" id="itemName" class="form-control" placeholder="Prizren">
+              <label for="itemName" class="form-label fw-bold mt-1">Birthday</label>
+              <input type="date" id="itemName" class="form-control" placeholder="18/08/2002">
             </div>
             <div class="col-md-6 mt-2">
               <label for="itemName" class="form-label fw-bold">Contact Info</label>
-              <input type="phone" id="itemName" class="form-control mt-1" placeholder="+383 44 116 364">
+              <input type="phone" id="itemName" class="form-control mt-1" placeholder="+383 45 390 403">
                 <div class="input-group mt-1">
-                  <input type="text" class="form-control" placeholder="QebaptoreShqiprmi" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+                  <input type="text" class="form-control" placeholder="altingashi1882" aria-label="Recipient’s username" aria-describedby="basic-addon2">
                   <span class="input-group-text" id="basic-addon2">@gmail.com</span>
                 </div>
               <input type="text" id="itemName" class="form-control mt-1" placeholder="Instagram">
               <input type="text" id="itemName" class="form-control mt-1" placeholder="Facebook">
             </div>
+            <div class="col-md-6">
+                <label for="priceInput" class="form-label fw-bold">Profile Picture</label>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile01">
+                </div>
+            </div>
           </div>
           <!-- Submit Button -->
           <div class="mt-4 d-flex justify-content-center">
-            <button type="submit" class="btn btn-success px-4">Update Settings</button>
+            <button type="submit" class="btn btn-primary px-4">Update Details</button>
           </div>
         </form>
       </div>
